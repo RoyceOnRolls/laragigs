@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('/hello', function () {
+    return response('<h1>Hello King 👑</h1>');
+});
+
+Route::get('/number/{num}', function ($num) {
+    dd($num);
+    return response('The number is: '.$num);
+})->where('num', '[0-9]+');
