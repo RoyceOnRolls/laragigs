@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,5 +25,9 @@ Route::get('/hello', function () {
 
 Route::get('/number/{num}', function ($num) {
     dd($num);
-    return response('The number is: '.$num);
+    return response('The number is: ' . $num);
 })->where('num', '[0-9]+');
+
+Route::get('/search', function (Request $request) {
+    return $request->name . " " . $request->city;
+});
