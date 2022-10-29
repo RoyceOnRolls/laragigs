@@ -2,7 +2,7 @@ Resource:
 https://www.youtube.com/watch?v=MYyJ4PuL4pY
 
 Mark:
-2:38:47
+2:57:22
 
 Recheck:
 recheck alpine js at 2:33:03
